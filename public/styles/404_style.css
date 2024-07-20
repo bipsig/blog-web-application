@@ -448,7 +448,11 @@ li form input[type="submit"]:hover {
 .blog-details-container .blog-content {
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: left;
     margin-bottom: 1.5rem;
+    white-space: pre-wrap; /* Maintains line breaks and spaces */
+    overflow-wrap: break-word; /* Ensures long words break properly */
+    word-wrap: break-word; /* Older syntax for compatibility */
 }
 
 .blog-details-container .blog-actions {

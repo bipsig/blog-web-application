@@ -16,7 +16,8 @@
             <% } %> 
             By <%= blog.author %> on <%= blog.date %>
         </p>
-        <div class="blog-content"><%= blog.content %></div>
+        <!-- Use <pre> to preserve spaces and line breaks -->
+        <pre class="blog-content"><%= blog.content %></pre>
         <div class="blog-actions">
             <form action="/delete-blog<%= blog.id %>" method="POST" class="form-inline">
                 <button type="submit" class="btn-delete">Delete</button>
