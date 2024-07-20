@@ -1,30 +1,35 @@
 <%- include("partials/header.ejs") %>
 
-<body class="bg-purple">
-    <div class="stars">
-        <%- include("partials/navbar.ejs") %>
-        <%- include("partials/glowing-stars.ejs") %>
-    </div>
-
-    <div class="blog-details-container">
-        <h1 class="blog-title"><%= blog.title %></h1>
-        <p class="blog-author">
-            <% if (blog.updated) { %>
-                Updated 
-            <% } else { %>
-                Created 
-            <% } %> 
-            By <%= blog.author %> on <%= blog.date %>
-        </p>
-        <!-- Use <pre> to preserve spaces and line breaks -->
-        <pre class="blog-content"><%= blog.content %></pre>
-        <div class="blog-actions">
-            <form action="/delete-blog<%= blog.id %>" method="POST" class="form-inline">
-                <button type="submit" class="btn-delete">Delete</button>
-            </form>
-            <a href="/update-blog<%= blog.id %>" class="btn-update">Update Blog</a>
+    <body class="bg-purple">
+        <div class="stars">
+            <%- include("partials/navbar.ejs") %>
+                <%- include("partials/glowing-stars.ejs") %>
         </div>
-        <a href="/" class="btn-go-home">Back to Home</a>
-    </div>
-</body>
-</html>
+
+        <div class="blog-details-container">
+            <h1 class="blog-title">
+                <%= blog.title %>
+            </h1>
+            <p class="blog-author">
+                <% if (blog.updated) { %>
+                    Updated
+                    <% } else { %>
+                        Created
+                        <% } %>
+                            By <%= blog.author %> on <%= blog.date %>
+            </p>
+            <!-- Use <pre> to preserve spaces and line breaks -->
+            <pre class="blog-content"><%= blog.content %></pre>
+            <div class="blog-actions">
+                <form action="/delete-blog<%= blog.id %>" method="POST" class="form-inline">
+                    <button type="submit" class="btn-delete">Delete</button>
+                </form>
+                <a href="/update-blog<%= blog.id %>" class="btn-update">Update Blog</a>
+            </div>
+            <a href="/" class="btn-go-home">Back to Home</a>
+        </div>
+
+        <%- include ("partials/footer.ejs") %>
+    </body>
+
+    </html>

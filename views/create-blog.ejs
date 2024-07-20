@@ -1,35 +1,38 @@
 <%- include("partials/header.ejs") %>
 
-<body class="bg-purple">
-    <div class="stars">
-        <%- include("partials/navbar.ejs") %>
-        <%- include("partials/glowing-stars.ejs") %>
-    </div>
+    <body class="bg-purple">
+        <div class="stars">
+            <%- include("partials/navbar.ejs") %>
+                <%- include("partials/glowing-stars.ejs") %>
+        </div>
 
-    <div class="form-container">
-        <h2>Create a New Blog</h2>
-        <form action="/create-blog" method="POST">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div class="form-group">
-                <label for="author">Author</label>
-                <input type="text" id="author" name="author" required>
-            </div>
-            <div class="form-group">
-                <label for="summary">Summary</label>
-                <input type="text" id="summary" name="summary" required>
-            </div>
-            <div class="form-group">
-                <label for="content">Content</label>
-                <textarea id="content" name="content" rows="10" required></textarea>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create Blog" class="btn-submit">
-            </div>
-        </form>
-        <a href="/" class="btn-go-home">Back to Home</a>
-    </div>
-</body>
-</html>
+        <div class="form-container">
+            <h2>Create a New Blog</h2>
+            <form action="/create-blog" method="POST">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="summary">Summary</label>
+                    <input type="text" id="summary" name="summary" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" rows="10" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create Blog" class="btn-submit">
+                </div>
+            </form>
+            <a href="/" class="btn-go-home">Back to Home</a>
+        </div>
+
+        <%- include ("partials/footer.ejs") %>
+    </body>
+
+    </html>
