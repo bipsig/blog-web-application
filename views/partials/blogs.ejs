@@ -1,0 +1,18 @@
+<div class="blogs-container">
+    <h2 class="blogs-title">Available Blogs</h2>
+    <% if (blogs.length > 0) { %>
+        <div class="blogs-list">
+            <% for (let i = blogs.length - 1; i >= 0; i--) { %> 
+                <div class="blog-item">
+                    <h3 class="blog-title"><%= blogs[i].title %></h3>
+                    <p class="blog-summary"><%= blogs[i].summary %></p>
+                    <a class="blog-read-more" href="/blog<%= blogs[i].id %>">Read more</a>
+                </div>
+            <% } %>
+        </div>
+    <% } else { %>
+        <div class="no-blogs-message">
+            <p>No blogs available at the moment. Check back later!</p>
+        </div>
+    <% } %>
+</div>
