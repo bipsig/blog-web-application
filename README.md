@@ -38,7 +38,7 @@ This blog application provides a platform to create and manage blog posts. Users
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/blog-application.git
+    git clone https://github.com/bipsig/insights-hub-blog-app-express.git
     ```
 2. Navigate to the project directory:
     ```bash
