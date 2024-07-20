@@ -450,9 +450,8 @@ li form input[type="submit"]:hover {
     line-height: 1.6;
     text-align: left;
     margin-bottom: 1.5rem;
-    white-space: pre-wrap; /* Maintains line breaks and spaces */
-    overflow-wrap: break-word; /* Ensures long words break properly */
-    word-wrap: break-word; /* Older syntax for compatibility */
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
 }
 
 .blog-details-container .blog-actions {
