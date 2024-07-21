@@ -4,6 +4,7 @@ A simple blog application built using Express.js that allows users to create, up
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Demo](#demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Prerequisites](#prerequisites)
@@ -16,6 +17,9 @@ A simple blog application built using Express.js that allows users to create, up
 
 ## Introduction
 This blog application provides a platform to create and manage blog posts. Users can create new blogs, update existing ones, view the list of blogs, view details of a specific blog, and delete blogs.
+
+## Demo
+You can check out the live demo of the application [here](https://insights-hub-blog-app-express.onrender.com/)
 
 ## Features
 - Create new blog posts
